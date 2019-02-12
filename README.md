@@ -53,7 +53,7 @@ f(“some_data”)
 }
 ```
 и одно действие `doFibo` для изменения узла `result`
-![Alak Simple Fibo State](http://o.unq.onl/hxvrt.png)
+![Alak Simple Fibo State](http://o.unq.onl/state-cat.gif)
 
 [Run Simple Fibo on codesandbox.io](https://codesandbox.io/s/01zpyvk87p)
 
