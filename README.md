@@ -27,6 +27,8 @@
 ![fantasy-land](https://github.com/fantasyland/fantasy-land/raw/master/figures/dependencies.png)
 https://github.com/fantasyland/fantasy-land#monad
 
+
+
 Когда браузеры не умели даже Proxy, для манипуляции реактивным клубком состояний я сделал библиотеку alak. Первая версия в пару десятков строк кода делала всё необходимое нужно от flyd без необходимости таскать импорты для взаимодействия с сущностью в лаконичном стиле. Год назад библиотека переехала на Proxy и помимо состояния функторы обрели метаданные. Но основные два момента необходимых для понимания остались неизменными: 
 ```
 //создание потока
@@ -38,3 +40,20 @@ f.v
 //передача данных в поток
 f(“some_data”)
 ```
+
+В примере [Alak Simple Fibo State](https://codesandbox.io/s/01zpyvk87p) модель состояния имет вид:
+```
+{
+  offset: A.flow(2),
+  count: A.flow(3),
+  result: A.flow
+}
+```
+и одно действие `doFibo` для изменения узла `result`
+![Alak Simple Fibo State](http://o.unq.onl/hxvrt.png)
+
+[Run Simple Fibo on codesandbox.io](https://codesandbox.io/s/01zpyvk87p)
+
+Для управления представления DOM можно использовать любой самодельное или модное решение вроде react, vue, etc...
+В следущем примере для этого написал небольшую функцию xdom.
+https://codesandbox.io/s/m7v933zpyp
