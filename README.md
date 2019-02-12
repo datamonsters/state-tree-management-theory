@@ -58,5 +58,5 @@ f(“some_data”)
 [Run Simple Fibo on codesandbox.io](https://codesandbox.io/s/01zpyvk87p)
 
 Для управления представления DOM можно использовать любой самодельное или модное решение вроде react, vue, etc...
-В следущем примере для этого написал небольшую функцию xdom.
+В следущем примере для этого попрежнему использутся простая render функция.
 https://codesandbox.io/s/m7v933zpyp
